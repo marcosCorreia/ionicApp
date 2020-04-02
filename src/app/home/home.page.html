@@ -6,8 +6,8 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
--->
-<!--
+
+
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -15,11 +15,14 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container" style="padding">
+  <div id="container">
 
-    <h1>Botões</h1>
-
-    <ion-button>Padrão</ion-button>
+   <h4>Grid</h4>
+    <ion-grid>
+      <ion-row>
+        <ion-col>Conteúdo 1</ion-col>
+      </ion-row>
+    </ion-grid>
     
   </div>
 </ion-content>
@@ -36,57 +39,63 @@
 
 
 
-<ion-content padding>
+<ion-content class="ion-padding">
 
-  <h4>Configurando entrada (floating, fixed e stacked</h4>
-  <ion-item>
-    <ion-label position="stacked">Seu nome:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+  <h4>Grid</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="9">Conteúdo 1</ion-col>
+      <ion-col size="3">Conteúdo 2</ion-col>
+    </ion-row>
+     <ion-row>
+      <ion-col size="4">Conteúdo 1</ion-col>
+      <ion-col size="4">Conteúdo 2</ion-col>
+      <ion-col size="4">Conteúdo 2</ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <h4>Entrada de dados (value, placeholder, clearinput)</h4>
+  <h4>Grid - offset</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">Conteúdo 1</ion-col>
+      <ion-col size="3" offset="2">Conteúdo 2</ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <ion-item>   
-    <ion-input clearInput placeholder="Digite o seu nome:"></ion-input>
-  </ion-item>
+  <h4>Grid - alinhamento textos (text-start, text-end, text-center</h4>
+  <ion-grid>
+      <ion-row>
+        <ion-col size="4" class="ion-text-end">1</ion-col>
+        <ion-col size="4" class="ion-text-center">2</ion-col>
+        <ion-col size="4" class="ion-text-start">2</ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <h4>Tipos de entradas (text, number, password, email, tel, url, search)</h4>
+  <h4>Grid - alinhamento vertical</h4>
+  <ion-grid>
+      <ion-row class="ion-align-items-start">
+        <ion-col size="4" class="">1</ion-col>
+        <ion-col size="4" class="">2</ion-col>
+        <ion-col size="4" class="">3 <br> + <br> +</ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <ion-item>  
-    <ion-label>Texto:</ion-label> 
-    <ion-input type="text"></ion-input>
-  </ion-item>
+  <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4" class="">1</ion-col>
+        <ion-col size="4" class="">2</ion-col>
+        <ion-col size="4" class="">3 <br> + <br> +</ion-col>
+      </ion-row>
+  </ion-grid>
 
-  <ion-item>  
-    <ion-label>Número:</ion-label> 
-    <ion-input type="number"></ion-input>
-  </ion-item>
-
-  <ion-item>  
-    <ion-label>Senha:</ion-label> 
-    <ion-input type="password"></ion-input>
-  </ion-item>
-
-  <ion-item>  
-    <ion-label>Email:</ion-label> 
-    <ion-input type="email"></ion-input>
-  </ion-item>
-
-  <ion-item>  
-    <ion-label>Telefone:</ion-label> 
-    <ion-input type="tel"></ion-input>
-  </ion-item>
-
-  <ion-item>  
-    <ion-label>URL:</ion-label> 
-    <ion-input type="url"></ion-input>
-  </ion-item>
-
-  <ion-item>  
-    <ion-label>Search:</ion-label> 
-    <ion-input type="search"></ion-input>
-  </ion-item>
-
-
+  <ion-grid>
+      <ion-row class="ion-align-items-end">
+        <ion-col size="4" class="">1</ion-col>
+        <ion-col size="4" class="">2</ion-col>
+        <ion-col size="4" class="">3 <br> + <br> +</ion-col>
+      </ion-row>
+  </ion-grid>
 
 </ion-content>
+
+
