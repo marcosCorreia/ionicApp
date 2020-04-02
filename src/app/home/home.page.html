@@ -40,61 +40,29 @@
 
 
 <ion-content class="ion-padding">
+  
+  Data Binding (ligação de dados) <br>
+  <h1>{{ titulo }}</h1>
+  <h4>Event Biding</h4>
 
-  <h4>Grid</h4>
-  <ion-grid>
-    <ion-row>
-      <ion-col size="9">Conteúdo 1</ion-col>
-      <ion-col size="3">Conteúdo 2</ion-col>
-    </ion-row>
-     <ion-row>
-      <ion-col size="4">Conteúdo 1</ion-col>
-      <ion-col size="4">Conteúdo 2</ion-col>
-      <ion-col size="4">Conteúdo 2</ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-button (click)="acao()">Botão</ion-button>
+    <ion-item>
+      <ion-label position="stacked">Seu nome:</ion-label>
+      <ion-input (input)="atualiza()"></ion-input>
+    </ion-item>
 
-  <h4>Grid - offset</h4>
-  <ion-grid>
-    <ion-row>
-      <ion-col size="6">Conteúdo 1</ion-col>
-      <ion-col size="3" offset="2">Conteúdo 2</ion-col>
-    </ion-row>
-  </ion-grid>
+    <br><br>
 
-  <h4>Grid - alinhamento textos (text-start, text-end, text-center</h4>
-  <ion-grid>
-      <ion-row>
-        <ion-col size="4" class="ion-text-end">1</ion-col>
-        <ion-col size="4" class="ion-text-center">2</ion-col>
-        <ion-col size="4" class="ion-text-start">2</ion-col>
-    </ion-row>
-  </ion-grid>
 
-  <h4>Grid - alinhamento vertical</h4>
-  <ion-grid>
-      <ion-row class="ion-align-items-start">
-        <ion-col size="4" class="">1</ion-col>
-        <ion-col size="4" class="">2</ion-col>
-        <ion-col size="4" class="">3 <br> + <br> +</ion-col>
-    </ion-row>
-  </ion-grid>
+  Data Binding (ligação de dados)
+  <h4>Property Binding</h4>  
+  <ion-img [src]="imagemLocal"></ion-img>
 
-  <ion-grid>
-      <ion-row class="ion-align-items-center">
-        <ion-col size="4" class="">1</ion-col>
-        <ion-col size="4" class="">2</ion-col>
-        <ion-col size="4" class="">3 <br> + <br> +</ion-col>
-      </ion-row>
-  </ion-grid>
+  Data Binding (ligação de dados)
+  <h4>String interpolation</h4>
+  
 
-  <ion-grid>
-      <ion-row class="ion-align-items-end">
-        <ion-col size="4" class="">1</ion-col>
-        <ion-col size="4" class="">2</ion-col>
-        <ion-col size="4" class="">3 <br> + <br> +</ion-col>
-      </ion-row>
-  </ion-grid>
+  <ion-img src="{{ imagemRandomica }}"></ion-img>
 
 </ion-content>
 

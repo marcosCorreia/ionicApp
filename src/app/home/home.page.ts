@@ -9,4 +9,20 @@ export class HomePage {
 
   constructor() {}
 
+  public titulo: String = "Meu primeiro App"
+  public imagemRandomica: String = "https://source.unsplash.com/random/200x200"
+  
+  public imagemLocal: String = "../assets/icone-celular.png"
+
+  public atualiza(): void {
+
+  	this.titulo = "Texto alterado"
+
+  }
+
+  public acao(): void {
+
+  	this.titulo = "Botão Clicado"
+
+  }
 }
